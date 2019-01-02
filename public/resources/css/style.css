@@ -1,3 +1,34 @@
-/*
-  Custom styles for Trackster App
-*/
+/* UNIVERSAL */
+
+body {
+  font-size: 16px;
+}
+
+/* HEADER */
+
+.container-fluid {
+  background-color: rgb(35, 2, 63);
+  height: 100px;
+  padding: 30px 50px;
+}
+
+.logo {
+  font-family: 'Righteous';
+  font-size: 2.5rem;
+  color: rgb(255, 0, 171);
+}
+
+.form-inline {
+  margin-left: 40%;
+  padding-left: 1%;
+  border-radius: 20px;
+  border: solid 1px transparent;
+}
+
+button {
+  background-color: rgb(255, 102, 204);
+  width: 50px;
+  color: black;
+  border-radius: 20px;
+  border: solid 1px transparent; 
+}
