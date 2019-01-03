@@ -7,8 +7,7 @@ body {
 /* HEADER */
 .container-fluid {
   background-color: rgb(35, 2, 63);
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 5%;
 }
 
 .logo {
