@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#btn-header").click(function() {
-    console.log("Btn got clicked");
+    console.log($(".form-control.header").val());
   });
 });
 
