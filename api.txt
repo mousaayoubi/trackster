@@ -1,0 +1,4 @@
+Application name	Trackster
+API key	25b460cefc5e2f646c570f993ac29d97
+Shared secret	3dbe022832eafe9154669f14fe179ee9
+Registered to	mousaayoubi
