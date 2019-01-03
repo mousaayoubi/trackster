@@ -1,3 +1,10 @@
+$(document).ready(function() {
+  $("#btn-header").click(function() {
+    console.log("Btn got clicked");
+  });
+});
+
+
 var Trackster = {};
 
 /*
