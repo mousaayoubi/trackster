@@ -30,3 +30,14 @@ body {
 .btn.header:hover {
   background-color: rgb(255, 0, 171);
 }
+
+/* PLAYLIST */
+
+.row.playlist {
+  background-color: rgb(104, 0, 255);
+  padding: 1% 2%;
+}
+
+.playlist-title {
+  color: rgb(255, 255, 255);
+}
