@@ -36,8 +36,26 @@ body {
 .row.playlist {
   background-color: rgb(104, 0, 255);
   padding: 1% 2%;
+  font-family: "Work Sans";
 }
 
 .playlist-title {
   color: rgb(255, 255, 255);
+}
+
+.row.songs {
+  background-color: rgb(0, 0, 0);
+  padding: 1% 2%;
+  font-family: "Work Sans";
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(204, 204, 204);
+}
+
+.play-icon {
+  color: rgb(255, 0, 171);
+}
+
+.songs-title {
+  color: rgb(204, 204, 204);
 }
