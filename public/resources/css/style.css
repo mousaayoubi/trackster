@@ -23,6 +23,10 @@ body {
   color: rgb(255, 0, 171);
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .form-control.header {
   border-radius: 20px;
 }
