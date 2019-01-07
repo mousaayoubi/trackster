@@ -57,14 +57,28 @@ Trackster.searchTracksByTitle = function(title) {
       var n = result_obj.results.trackmatches.track.length;
       console.log(n);
       while (i < n) {
-        var album = result_obj.results.trackmatches.track[i].image[2]["#text"];
-        var formattedHtml = "Track Name: " + result_obj.results.trackmatches.track[i].name + "<br />"+
-      "Artist Name: " + result_obj.results.trackmatches.track[i].artist + "<br />"+
-      "Popularity: " + result_obj.results.trackmatches.track[i].listeners + "<br />"+
-                      "URL: " + "<a target=_blank href= " + result_obj.results.trackmatches.track[i].url + ">"+result_obj.results.trackmatches.track[i].url+"</a>" + "<br />" +
-                      "<img src= " + album + ">"+"<br /><br />";
-  $("#results").append(formattedHtml);
-  i++;
+        var album = result_obj.results.trackmatches.track[i].image[1]["#text"];
+        var formattedHtml = 
+        '<a target=_blank href=' + result_obj.results.trackmatches.track[i].url + '><div class="row songs" id="results">' +
+        '<div class="col-sm-1 play-icon">' +
+        '<i class="far fa-play-circle"></i>' +
+        '</div>' +
+        '<div class="col-sm-4 songs-title">' +
+        result_obj.results.trackmatches.track[i].name +
+        '</div>' +
+        '<div class="col-sm-3 songs-title">' +
+        result_obj.results.trackmatches.track[i].artist +
+        '</div>' +
+        '<div class="col-sm-2 songs-title">' +
+        "<img src= " + album + ">" +
+        '</div>' +
+        '<div class="col-sm-2 songs-title">' +
+        result_obj.results.trackmatches.track[i].listeners +
+        '</div>' +
+        '</div>' + 
+        '</a>';            
+        $("#results").append(formattedHtml);
+        i++;
       }
     }
   });

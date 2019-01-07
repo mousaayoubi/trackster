@@ -4,7 +4,13 @@ body {
   font-size: 16px;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /* HEADER */
+
 .container-fluid {
   background-color: rgb(35, 2, 63);
   padding-top: 2%;
@@ -57,14 +63,9 @@ body {
 }
 
 .songs-title {
-  color: rgb(204, 204, 204);
+  color: rgb(47, 79, 79);
 }
 
-#results_title {
-  padding-left: 100px;
-  color: rgb(255, 0, 171);
-  font-family: "Work Sans";
-}
 #results {
-  padding-left: 100px;
+  background-color: white;
 }
