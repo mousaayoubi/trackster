@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#btn-header").click(function() {
+    $("#results").empty();
     Trackster.searchTracksByTitle($(".form-control.header").val());
   });
 });
@@ -51,13 +52,20 @@ Trackster.searchTracksByTitle = function(title) {
     success: function(result) {
       console.log(result);
       Trackster.renderTracks();
+      var result_obj = result;
       var i = 0;
-      var temp1 = result;
-      var formattedHtml = "Track Name: " + temp1.results.trackmatches.track[i].name + "<br/>"+
-      "Artist Name: " + temp1.results.trackmatches.track[i].artist + "<br/>"+
-                      "URL: " + temp1.results.trackmatches.track[i].url;
-                      "Image: " + temp1.results.trackmatches.track[i].image[1]["#text"];
+      var n = result_obj.results.trackmatches.track.length;
+      console.log(n);
+      while (i < n) {
+        var album = result_obj.results.trackmatches.track[i].image[2]["#text"];
+        var formattedHtml = "Track Name: " + result_obj.results.trackmatches.track[i].name + "<br />"+
+      "Artist Name: " + result_obj.results.trackmatches.track[i].artist + "<br />"+
+      "Popularity: " + result_obj.results.trackmatches.track[i].listeners + "<br />"+
+                      "URL: " + "<a target=_blank href= " + result_obj.results.trackmatches.track[i].url + ">"+result_obj.results.trackmatches.track[i].url+"</a>" + "<br />" +
+                      "<img src= " + album + ">"+"<br /><br />";
   $("#results").append(formattedHtml);
+  i++;
+      }
     }
   });
 };

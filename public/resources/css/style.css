@@ -59,3 +59,10 @@ body {
 .songs-title {
   color: rgb(204, 204, 204);
 }
+
+#results_title {
+  padding-left: 100px;
+}
+#results {
+  padding-left: 100px;
+}
