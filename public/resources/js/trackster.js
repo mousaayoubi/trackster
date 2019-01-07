@@ -59,7 +59,9 @@ Trackster.searchTracksByTitle = function(title) {
       while (i < n) {
         var album = result_obj.results.trackmatches.track[i].image[1]["#text"];
         var formattedHtml = 
-        '<a target=_blank href=' + result_obj.results.trackmatches.track[i].url + '><div class="row songs" id="results" style="border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204);">' +
+        '<a target=_blank href=' + result_obj.results.trackmatches.track[i].url + 
+        '><div class="row songs" id="results" style="border-bottom-style: solid;' +
+        'border-bottom-width: 1px; border-bottom-color: rgb(204, 204, 204);">' +
         '<div class="col-sm-1 play-icon">' +
         '<i class="far fa-play-circle"></i>' +
         '</div>' +
