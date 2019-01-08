@@ -49,7 +49,7 @@ Trackster.searchTracksByTitle = function(title) {
         "<img src= " + album + ">" +
         '</div>' +
         '<div class="col-sm-2 songs-title">' +
-        result_obj.results.trackmatches.track[i].listeners +
+        numeral(result_obj.results.trackmatches.track[i].listeners).format('0, 0') +
         '</div>' +
         '</div>' + 
         '</a>';            
