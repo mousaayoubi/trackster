@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  $(".form-control.header").keypress(function(e) {
+    if (e.which == 13) {
+      $("#results").empty();
+      Trackster.searchTracksByTitle($(".form-control.header").val());
+      return false;
+    }
+  })
+
   $("#btn-header").click(function() {
     $("#results").empty();
     Trackster.searchTracksByTitle($(".form-control.header").val());
