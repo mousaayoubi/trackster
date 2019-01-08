@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".form-control.header").keypress(function(e) {
+  $(".form-control.header").keydown(function(e) {
     if (e.which == 13) {
       $("#results").empty();
       Trackster.searchTracksByTitle($(".form-control.header").val());
