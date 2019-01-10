@@ -38,6 +38,7 @@ Trackster.searchTracksByTitle = function(title) {
       var result_obj = result;
       var n = result_obj.results.trackmatches.track.length;
       console.log(n);
+      $(".logo").animate({height: "toggle"});
       for (var i = 0; i < n; i++) {
         var album = result_obj.results.trackmatches.track[i].image[1]["#text"];
         var formattedHtml = 
@@ -63,6 +64,7 @@ Trackster.searchTracksByTitle = function(title) {
         '</a>';            
         $("#results").append(formattedHtml);
       }
+      $(".logo").animate({height: "toggle"});
     }
   });
 };
