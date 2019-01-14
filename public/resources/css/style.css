@@ -35,6 +35,7 @@ a:hover {
   border-radius: 20px;
   width: 75px;
   background-color: rgb(255, 102, 204);
+  color: white;
 }
 
 .btn.header:hover {
