@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".form-control").submit();
-  var a = localStorage.getItem("byTitle");
-  Trackster.searchTracksByTitle(a);
+  var savedTitle = localStorage.getItem("byTitle");
+  Trackster.searchTracksByTitle(savedTitle);
   $(".form-control").keydown(function(e) {
     if (e.which == 13) {
       $("#results").empty();
