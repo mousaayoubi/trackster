@@ -10,7 +10,7 @@ $(document).ready(function() {
     }
   })
 
-  $("#btn-header").click(function() {
+  $(".btn").click(function() {
     $("#results").empty();
     Trackster.searchTracksByTitle($(".form-control").val());
   });
